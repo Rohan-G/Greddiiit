@@ -1,6 +1,6 @@
 # Greddiit
 
-#### <b>Note:</b> docker compose does not work on my machine, so I haven't tested with it. docker-compose v1.29.2 works fina and was what was used to run the docker files. Command to run it:
+#### <b>Note:</b> docker compose does not work on my machine, so I haven't tested with it. docker-compose v1.29.2 works fine and was what was used to run the docker files. Command to run it:
 ```
 sudo docker-compose up --build
 ```
