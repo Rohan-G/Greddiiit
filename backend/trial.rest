@@ -1,0 +1,63 @@
+# POST http://localhost:8000/api/user
+# Content-Type:  application/json
+
+# {
+#     "fname" : "admin",
+#     "lname" : "admin",
+#     "uname" : "admin",
+#     "email" : "admin@iiit.ac.in",
+#     "age" : 19,
+#     "cn" : 1234567890,
+#     "pass" : "admin"
+# }
+
+GET http://localhost:8000/api/user
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVuYW1lIjoiYXBwYWppIiwiX2lkIjoiNjNlM2RmMjRiY2ZiNmU4ZTJmYjY5NGYyIn0sImlhdCI6MTY3NzAwMDc1NiwiZXhwIjoxNjc3MzYwNzU2fQ.buXYnxj5B-e8ppE8UUtRj_VgFy1suWbGZC-o_qIie4s
+
+# POST http://localhost:8000/api/auth
+# Content-Type:  application/json
+
+# {
+#     "username" : "iiit",
+#     "password" : "admin"
+# }
+
+# POST http://localhost:8000/api/user/follow
+# Content-Type: application/json
+# x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVuYW1lIjoiYXBwYWppIiwiX2lkIjoiNjNlM2RmMjRiY2ZiNmU4ZTJmYjY5NGYyIn0sImlhdCI6MTY3NzAwMDc1NiwiZXhwIjoxNjc3MzYwNzU2fQ.buXYnxj5B-e8ppE8UUtRj_VgFy1suWbGZC-o_qIie4s
+
+# {
+#     "uname": "admin"
+# }
+
+# PATCH http://localhost:8000/api/user/follow
+# Content-Type: application/json
+# x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVuYW1lIjoiYXBwYWppIiwiX2lkIjoiNjNlM2RmMjRiY2ZiNmU4ZTJmYjY5NGYyIn0sImlhdCI6MTY3NzAwMDc1NiwiZXhwIjoxNjc3MzYwNzU2fQ.buXYnxj5B-e8ppE8UUtRj_VgFy1suWbGZC-o_qIie4s
+
+# {
+#     "from": 1,
+#     "uname": "admin"
+# }
+
+# PATCH http://localhost:8000/api/posts/addUsersSaved
+# Content-Type: application/json
+
+# {
+#     "id" : "63f795f213177b2cfa1199d2"
+# }
+
+# POST http://localhost:8000/api/subs/
+# Content-Type: application/json
+# x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVuYW1lIjoiYXBwYWppIiwiX2lkIjoiNjNlM2RmMjRiY2ZiNmU4ZTJmYjY5NGYyIn0sImlhdCI6MTY3NzAwMDc1NiwiZXhwIjoxNjc3MzYwNzU2fQ.buXYnxj5B-e8ppE8UUtRj_VgFy1suWbGZC-o_qIie4s
+
+# {
+#     "name" : "Fr og",
+#     "description": "When the Vineeth Bhat does the funni",
+#     "tags": ["Hello", "there", "General", "Kenobi"],
+#     "bannedKeywords":["Cringe","Unfunny","Vineeth","Bhat"]
+# }
+
+# GET http://localhost:8000/api/subs/users/One Piece/
+# Content-Type: application/json
+# x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVuYW1lIjoiYXBwYWppIiwiX2lkIjoiNjNlM2RmMjRiY2ZiNmU4ZTJmYjY5NGYyIn0sImlhdCI6MTY3NzAwMDc1NiwiZXhwIjoxNjc3MzYwNzU2fQ.buXYnxj5B-e8ppE8UUtRj_VgFy1suWbGZC-o_qIie4s
