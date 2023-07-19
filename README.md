@@ -22,3 +22,5 @@ sudo docker-compose up --build
 ### Implemented API call authorization checking.
 
 ### Assuming dockerization doesn't include nginx since it was not mentioned on moodle or the document
+
+## Note: Will not work outside IIIT Networks or my parents' wifi (due to my mongoDB account being a learner account and I don't want to open it to the public in case the database gets overloaded)
